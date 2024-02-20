@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca de CEP</title>
+  <link rel="stylesheet" href="api.css"> <!-- Adicionando o arquivo CSS -->
+</head>
+
+<body>
+  <div class="container">
+    <h1>Busca de CEP</h1>
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" placeholder="Informe o CEP">
+    </div>
+    <div class="form-group">
+      <label for="logradouro">Logradouro</label>
+      <input type="text" id="logradouro" readonly>
+    </div>
+    <div class="form-group">
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" readonly>
+    </div>
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" id="localidade" readonly>
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" id="estado" readonly>
+    </div>
+    <div class="form-group">
+      <label for="pais">País</label>
+      <input type="text" id="pais" readonly>
+    </div>
+    <div class="form-group">
+      <button type="button" onclick="buscarCep()">Buscar CEP</button>
+    </div>
+  </div>
+
+  <div class="footer">Desenvolvido por Mateus Moreira</div>
+  
+  <script src="api.js"></script>
+</body>
+
+</html>
